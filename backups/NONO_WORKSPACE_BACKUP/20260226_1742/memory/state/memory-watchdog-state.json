@@ -1,0 +1,55 @@
+{
+  "consecutiveAnomalies": 0,
+  "last3": [
+    {
+      "jobs": {
+        "memory-sync-daily": {
+          "enabled": true,
+          "isStale": false,
+          "lastRunAtMs": 1772031600036,
+          "lastStatus": "ok"
+        },
+        "memory-weekly-tidy": {
+          "enabled": true,
+          "isStale": false,
+          "lastRunAtMs": 0,
+          "lastStatus": "idle"
+        }
+      },
+      "timestamp": 1772093700000
+    },
+    {
+      "jobs": {
+        "memory-sync-daily": {
+          "enabled": true,
+          "isStale": false,
+          "lastRunAtMs": 1772031600036,
+          "lastStatus": "ok"
+        },
+        "memory-weekly-tidy": {
+          "enabled": true,
+          "isStale": false,
+          "lastRunAtMs": 0,
+          "lastStatus": "idle"
+        }
+      },
+      "timestamp": 1772093700000
+    },
+    {
+      "jobs": {
+        "memory-sync-daily": {
+          "enabled": true,
+          "lastRunAtMs": 1772031600000,
+          "lastStatus": "ok"
+        },
+        "memory-weekly-tidy": {
+          "enabled": true,
+          "lastRunAtMs": 0,
+          "lastStatus": "idle"
+        }
+      },
+      "timestamp": 1772050500000
+    }
+  ],
+  "updatedAt": 1772093700000
+}
