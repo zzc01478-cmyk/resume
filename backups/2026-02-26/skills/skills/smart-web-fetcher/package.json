@@ -1,0 +1,45 @@
+{
+  "name": "smart-web-fetcher",
+  "version": "1.0.0",
+  "description": "智能网络内容获取系统 - 集成Crawlee、DOM压缩和智能路由",
+  "main": "scripts/smart-fetch.js",
+  "scripts": {
+    "start": "node scripts/smart-fetch.js",
+    "test": "node examples/basic-usage.js",
+    "install-deps": "npm install crawlee playwright jsdom",
+    "setup": "node scripts/setup.js",
+    "lint": "eslint scripts/*.js",
+    "clean": "rm -rf node_modules package-lock.json"
+  },
+  "keywords": [
+    "web",
+    "crawler",
+    "dom",
+    "compression",
+    "crawlee",
+    "smart",
+    "token-efficient",
+    "automation"
+  ],
+  "author": "OpenClaw AI Assistant",
+  "license": "MIT",
+  "dependencies": {
+    "crawlee": "^3.0.0",
+    "jsdom": "^22.1.0",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/openclaw/skills/smart-web-fetcher"
+  },
+  "bugs": {
+    "url": "https://github.com/openclaw/skills/issues"
+  },
+  "homepage": "https://docs.openclaw.ai/skills/smart-web-fetcher"
+}

@@ -1,0 +1,64 @@
+{
+  "豆包视频分析器配置": {
+    "api_key": "your_ark_api_key_here",
+    "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+    "model": "doubao-seed-1-6-251015",
+    "timeout": 300,
+    "output_dir": "./video_analysis_output",
+    
+    "默认设置": {
+      "analysis_type": "detailed",
+      "output_format": "markdown",
+      "auto_save": true,
+      "cleanup_days": 7
+    },
+    
+    "分析提示词模板": {
+      "summary": "请用一段话概括这个视频的主要内容、主题和核心信息。",
+      "detailed": "请对这个视频进行详细分析，包括内容摘要、场景分析、关键事件、识别物体和技术评价。",
+      "events": "请提取这个视频中的关键事件，以JSON格式输出时间、描述和重要性。",
+      "technical": "请分析这个视频的技术特征，包括画面质量、色彩表现、光线使用、构图特点和改进建议。",
+      "objects": "请识别这个视频中出现的主要物体和元素。"
+    },
+    
+    "视频处理设置": {
+      "max_file_size_mb": 512,
+      "supported_formats": [".mp4", ".avi", ".mov"],
+      "auto_extract_info": true,
+      "create_thumbnails": false
+    },
+    
+    "输出设置": {
+      "include_timestamp": true,
+      "include_video_info": true,
+      "pretty_json": true,
+      "encoding": "utf-8"
+    },
+    
+    "高级设置": {
+      "enable_cache": true,
+      "cache_ttl_hours": 24,
+      "retry_on_failure": true,
+      "max_retries": 3,
+      "concurrent_uploads": 1
+    }
+  },
+  
+  "使用说明": {
+    "1": "将本文件复制为 config.json",
+    "2": "替换 api_key 为你的豆包API Key",
+    "3": "根据需要调整其他设置",
+    "4": "确保 output_dir 目录存在且有写入权限",
+    "5": "支持的视频格式: MP4, AVI, MOV",
+    "6": "单个视频文件最大 512MB",
+    "7": "分析结果会自动保存到 output_dir 目录"
+  },
+  
+  "环境变量替代": {
+    "说明": "以下设置可以通过环境变量覆盖",
+    "ARK_API_KEY": "豆包API Key",
+    "DOUBAO_BASE_URL": "API基础URL",
+    "DOUBAO_MODEL": "使用的模型",
+    "DOUBAO_TIMEOUT": "超时时间(秒)"
+  }
+}

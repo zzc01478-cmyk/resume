@@ -1,0 +1,23 @@
+# 豆包视频分析技能依赖
+
+## 核心依赖
+openai>=1.0.0          # OpenAI兼容客户端
+requests>=2.31.0       # HTTP请求
+Pillow>=10.0.0         # 图像处理
+opencv-python>=4.8.0   # 视频处理
+moviepy>=1.0.3         # 视频编辑
+
+## 开发依赖
+pytest>=7.4.0          # 测试框架
+black>=23.0.0          # 代码格式化
+mypy>=1.5.0            # 类型检查
+flake8>=6.0.0          # 代码检查
+
+## 可选依赖
+numpy>=1.24.0          # 数值计算（opencv-python已包含）
+pandas>=2.0.0          # 数据分析
+matplotlib>=3.7.0      # 数据可视化
+
+## 安装命令
+# pip install -r requirements.txt
+# 或仅安装核心依赖: pip install openai requests pillow opencv-python moviepy

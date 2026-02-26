@@ -1,0 +1,7 @@
+{
+  "msg_type": "audio",
+  "content": {
+    "file_key": "需要先上传文件获取",
+    "duration": 3000
+  }
+}

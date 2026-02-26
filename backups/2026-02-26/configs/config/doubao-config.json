@@ -1,0 +1,44 @@
+{
+  "api_key": "47f191ba-131f-4ec0-ba38-2b28c2bd6316",
+  "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+  "model": "doubao-seed-2-0-pro-260215",
+  "timeout": 300,
+  "output_dir": "/root/.openclaw/workspace/video_analysis",
+  
+  "default_settings": {
+    "analysis_type": "detailed",
+    "output_format": "markdown",
+    "auto_save": true,
+    "cleanup_days": 7
+  },
+  
+  "analysis_prompts": {
+    "summary": "请用一段话概括这个视频的主要内容、主题和核心信息。",
+    "detailed": "请对这个视频进行详细分析，包括：\n1. 内容摘要：用一段话概括视频主要内容\n2. 场景分析：按时间顺序分析各个场景\n3. 关键事件：提取视频中的关键事件\n4. 识别物体：列出视频中出现的主要物体\n5. 技术评价：评价视频的画面质量、制作水平\n6. 改进建议：给出具体的改进建议",
+    "events": "请提取这个视频中的关键事件，以JSON格式输出，每个事件包括：时间（HH:mm:ss格式）、描述、重要性（高/中/低）、涉及的人物或物体。",
+    "technical": "请分析这个视频的技术特征：\n1. 画面质量（清晰度、色彩、光线）\n2. 音频质量（如果有）\n3. 制作水平\n4. 改进建议",
+    "objects": "请识别这个视频中出现的主要物体和元素。"
+  },
+  
+  "video_processing": {
+    "max_file_size_mb": 512,
+    "supported_formats": [".mp4", ".avi", ".mov"],
+    "auto_extract_info": true,
+    "create_thumbnails": false
+  },
+  
+  "output_settings": {
+    "include_timestamp": true,
+    "include_video_info": true,
+    "pretty_json": true,
+    "encoding": "utf-8"
+  },
+  
+  "advanced_settings": {
+    "enable_cache": true,
+    "cache_ttl_hours": 24,
+    "retry_on_failure": true,
+    "max_retries": 3,
+    "concurrent_uploads": 1
+  }
+}

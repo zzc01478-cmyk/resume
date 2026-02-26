@@ -1,0 +1,12 @@
+BOSS直聘访问测试结果
+===================
+时间: 2026-02-25T07:21:32.475Z
+URL: https://www.zhipin.com
+标题: BOSS直聘-找工作BOSS直聘直接谈！招聘求职找工作！
+HTTP状态码: 200
+内容大小: 527376 字节
+需要登录: 是
+找到登录关键词: 登录, 扫码登录
+找到二维码关键词: qrcode, 二维码, 扫码
+检测到重定向: 否
+内容文件: /root/.openclaw/workspace/skills/smart-web-fetcher/boss_results/boss_content_1772004092474.html

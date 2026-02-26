@@ -1,0 +1,50 @@
+{
+  "name": "double-check-article",
+  "version": "0.1.0",
+  "description": "中文文章内容检查工具，用于校对和改进中文文章质量",
+  "author": "tobegit3hub",
+  "keywords": [
+    "chinese",
+    "article",
+    "proofreading",
+    "check",
+    "text",
+    "editor"
+  ],
+  "license": "MIT",
+  "homepage": "https://clawhub.ai/tobegit3hub/double-check-article",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tobegit3hub/double-check-article"
+  },
+  "engines": {
+    "openclaw": ">=2026.2.0"
+  },
+  "files": [
+    "SKILL.md",
+    "package.json"
+  ],
+  "skill": {
+    "name": "Double Check Article",
+    "description": "中文文章内容检查工具，用于校对和改进中文文章质量。当用户需要检查中文文章、校对中文内容、修改错别字、优化中文表达、审核中文文档时使用此技能。",
+    "emoji": "📝",
+    "category": "text-processing",
+    "tags": ["chinese", "proofreading", "article", "check", "editor"],
+    "activation": {
+      "when": [
+        "用户提到检查中文文章",
+        "用户需要校对中文内容",
+        "用户需要修改错别字",
+        "用户需要优化中文表达",
+        "用户需要审核中文文档"
+      ],
+      "examples": [
+        "帮我检查这篇文章有没有错别字",
+        "校对一下这份中文文档",
+        "看看这段文字表达是否清晰",
+        "审核这个中文文章的质量",
+        "检查一下这个文案有没有问题"
+      ]
+    }
+  }
+}

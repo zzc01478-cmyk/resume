@@ -1,0 +1,9 @@
+{
+  "gemini": {
+    "api_key": "sk-592AXfbbIUo2g28D0PKydpEcxdQEZVF40Sg2MqJN6OlIJxps",
+    "model": "gemini-3-flash-preview",
+    "base_url": "https://api.linkapi.ai/v1",
+    "video_understanding_enabled": true,
+    "default_prompt": "请分析这个视频内容，包括：\n1. 视频的主要内容和主题\n2. 关键场景和视觉元素\n3. 音频信息（如果有）\n4. 情感氛围和风格\n5. 潜在用途和适用场景\n\n请用中文输出详细的分析报告。"
+  }
+}

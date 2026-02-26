@@ -1,0 +1,132 @@
+{
+  "routing": {
+    "defaultTool": "auto",
+    "dynamicSites": [
+      "shop.com",
+      "app.",
+      "spa.",
+      "dashboard.",
+      "admin.",
+      "console.",
+      "webapp."
+    ],
+    "apiPatterns": [
+      "/api/",
+      ".json$",
+      ".xml$",
+      ".yaml$",
+      ".yml$",
+      "/graphql",
+      "/rest/"
+    ],
+    "staticSites": [
+      "docs.",
+      "blog.",
+      "news.",
+      "article.",
+      "readme.",
+      "manual.",
+      "guide.",
+      "tutorial."
+    ],
+    "forceCrawlee": [
+      "twitter.com",
+      "youtube.com",
+      "instagram.com",
+      "facebook.com",
+      "linkedin.com"
+    ],
+    "forceWebFetch": [
+      "github.com",
+      "gitlab.com",
+      "stackoverflow.com",
+      "wikipedia.org",
+      "medium.com"
+    ]
+  },
+  "compression": {
+    "enabled": true,
+    "defaultMaxLength": 1500,
+    "extractActions": true,
+    "removeHidden": true,
+    "keepLinks": true,
+    "keepImages": false,
+    "keepCode": false,
+    "strategies": {
+      "news": {
+        "maxTextLength": 2000,
+        "keepImages": false,
+        "extractHeadlines": true
+      },
+      "ecommerce": {
+        "maxTextLength": 1000,
+        "extractPrices": true,
+        "extractReviews": true
+      },
+      "dashboard": {
+        "maxTextLength": 500,
+        "extractCharts": true,
+        "extractMetrics": true
+      },
+      "documentation": {
+        "maxTextLength": 3000,
+        "keepCode": true,
+        "extractExamples": true
+      },
+      "auth": {
+        "maxTextLength": 500,
+        "extractForms": true,
+        "keepLinks": false
+      }
+    }
+  },
+  "fetcher": {
+    "defaultTimeout": 30000,
+    "maxRetries": 2,
+    "cacheEnabled": true,
+    "cacheTTL": 3600,
+    "tokenBudget": 5000,
+    "enableCompression": true,
+    "enablePreDetection": true
+  },
+  "services": {
+    "webFetch": {
+      "maxChars": 10000,
+      "timeout": 10000,
+      "followRedirects": true
+    },
+    "crawlee": {
+      "headless": true,
+      "timeout": 30000,
+      "maxConcurrency": 3,
+      "browser": "chromium",
+      "waitUntil": "networkidle"
+    },
+    "curl": {
+      "timeout": 5000,
+      "followRedirects": true,
+      "maxRedirects": 5
+    }
+  },
+  "performance": {
+    "maxConcurrentRequests": 5,
+    "requestDelay": 1000,
+    "enableCache": true,
+    "cacheSize": 100,
+    "logLevel": "info"
+  },
+  "monitoring": {
+    "enableStats": true,
+    "statsInterval": 3600,
+    "enableLogging": true,
+    "logFile": "logs/smart-fetcher.log",
+    "errorReporting": true
+  },
+  "security": {
+    "respectRobotsTxt": true,
+    "maxRequestsPerMinute": 60,
+    "userAgent": "SmartWebFetcher/1.0",
+    "enableProxy": false,
+    "proxyList": []
+  }
+}

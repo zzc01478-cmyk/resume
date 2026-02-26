@@ -1,0 +1,24 @@
+{
+  "name": "dom-compressor-skill",
+  "version": "1.0.0",
+  "description": "AI Agent DOM Compressor - Reduce token usage by 99%",
+  "main": "dom-compressor.js",
+  "dependencies": {
+    "jsdom": "^24.1.3",
+    "playwright": "^1.40.0"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "dom",
+    "compression",
+    "token",
+    "browser",
+    "playwright"
+  ],
+  "author": "C-3PO",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
