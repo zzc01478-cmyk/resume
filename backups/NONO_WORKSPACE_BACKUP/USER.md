@@ -1,5 +1,7 @@
-# USER.md - About Your Human
+# USER.md - Owner Profile
 
-- **Name:** (未提供)
-- **Timezone:** Asia/Shanghai
-- **Notes:** 喜欢直接、干脆的沟通方式。目前在处理备份恢复和 chrome-mcp 项目。
+| 项 | 内容 |
+| :--- | :--- |
+| **Timezone** | Asia/Shanghai |
+| **Vibe** | 直接、干脆、结果导向 |
+| **Projects** | 备份恢复, Chrome-MCP, 视频/文案自动化提取 |
