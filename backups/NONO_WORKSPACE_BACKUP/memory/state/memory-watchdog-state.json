@@ -2,54 +2,56 @@
   "consecutiveAnomalies": 0,
   "last3": [
     {
+      "timestamp": 1772367300000,
       "jobs": {
         "memory-sync-daily": {
           "enabled": true,
+          "lastStatus": "ok",
           "isStale": false,
-          "lastRunAtMs": 1772031600036,
-          "lastStatus": "ok"
+          "lastRunAtMs": 1772290800011
         },
         "memory-weekly-tidy": {
           "enabled": true,
+          "lastStatus": "ok",
           "isStale": false,
-          "lastRunAtMs": 0,
-          "lastStatus": "idle"
+          "lastRunAtMs": null
         }
-      },
-      "timestamp": 1772093700000
+      }
     },
     {
+      "timestamp": 1772360100000,
       "jobs": {
         "memory-sync-daily": {
           "enabled": true,
+          "lastStatus": "ok",
           "isStale": false,
-          "lastRunAtMs": 1772031600036,
-          "lastStatus": "ok"
+          "lastRunAtMs": 1772290800011
         },
         "memory-weekly-tidy": {
           "enabled": true,
+          "lastStatus": "idle",
           "isStale": false,
-          "lastRunAtMs": 0,
-          "lastStatus": "idle"
+          "lastRunAtMs": null
         }
-      },
-      "timestamp": 1772093700000
+      }
     },
     {
+      "timestamp": 1772352960000,
       "jobs": {
         "memory-sync-daily": {
           "enabled": true,
-          "lastRunAtMs": 1772031600000,
-          "lastStatus": "ok"
+          "lastStatus": "ok",
+          "isStale": false,
+          "lastRunAtMs": 1772290800011
         },
         "memory-weekly-tidy": {
           "enabled": true,
-          "lastRunAtMs": 0,
-          "lastStatus": "idle"
+          "lastStatus": "ok",
+          "isStale": false,
+          "lastRunAtMs": null
         }
-      },
-      "timestamp": 1772050500000
+      }
     }
   ],
-  "updatedAt": 1772093700000
+  "updatedAt": 1772367300000
 }
